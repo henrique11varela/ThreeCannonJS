@@ -1,0 +1,6 @@
+<div class="page">
+  <h1>MENU</h1>
+  @for (link of links; track $index) {
+    <div  [routerLink]="['/', link.route]" class="menu-link">{{ link.text }}</div>
+  }
+</div>
